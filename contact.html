@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: o;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0, 0, 33);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            background-color: rgb(18, 18, 62);
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        form h3{
+            color: #555;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        form input, form textarea{
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background-color: #f5f5f5;
+            font-size: 16pxs;
+            
+
+        }
+        form button{
+            padding: 15px;
+            background: #ff5361;
+            color: white;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+        }
+        .p{
+            color: white;
+            margin: 37px -7px 10px 46px;
+        }
+       .social-icons img{
+            height: 32px;
+             width: 32px;
+             justify-content: center;
+             margin: 37px -7px 10px 46px;
+       }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Contact ME</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email Id" required>
+        <input type="text" id="phone" placeholder="Phone No" required>
+        <textarea  id="message" rows="4" placeholder="How Can I Help You?"></textarea>
+        <button type="submit">Send</button>
+        <div class="p"><p>You Can Message From This Social Media Application</p></div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/pratikbarguje" target="_blank"><img src="insta.png" alt=""></a>
+            <a href="https://wa.me/9021343242" target="_blank"><img src="whatsapp.png" alt=""></a>
+            <a href="https://www.twitter.com/@BargujeKailas" target="_blank"><img src="twitter-sign.png" alt=""></a>
+
+        </form>
+        
+           
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                
+    Host : "smtp.elasticemail.com",
+    Username : "pratikbarguje123@gmail.com",
+    Password : "C3119FD5DA32AEBF09490A77D942DD344849",
+    To : "pratikbarguje15@gmail.com",
+    From : document.getElementById("email").value,
+    Subject : "New contact form enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    +"<br> Email: " + document.getElementById("email").value
+    +"<br> Phone no: " + document.getElementById("phone").value
+    +"<br> Email: " + document.getElementById("message").value
+}).then(
+  message => alert("message sent scessfully")
+);
+        }
+    </script>
+ </body>
+ </html>

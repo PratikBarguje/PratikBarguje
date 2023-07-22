@@ -9,12 +9,40 @@
 
         }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+        
             background-color: rgb(0, 0, 33);
         color: white;
         }
+
+        nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 24px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(81, 81, 201);
+        font-size: 1.02rem;
+    }
+
+    .left{
+        font-size: 1.7rem;
+        color: white;
+    }
 
         .container {
             display: flex;
@@ -62,6 +90,19 @@
     </style>
 </head>
 <body>
+    <header>
+    <nav>
+        <div class="left">Pratik/Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>       
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="project.html">Projects-Info</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
     <div class="container">
         <div class="left-side">
             <img src="myprofile.jpg" alt="Your Photo">

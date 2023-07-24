@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Ubuntu&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -41,7 +44,13 @@
 
     .left{
         font-size: 1.7rem;
-        color: white;
+    }
+    .left ul li{
+        list-style: none;
+    }
+    .left ul li a:hover{
+        color: rgb(81, 81, 201);
+        font-size: 1.72rem;
     }
 
         .container {
@@ -92,13 +101,17 @@
 <body>
     <header>
     <nav>
-        <div class="left">Pratik/Portfolio</div>
+        <div class="left">
+            <ul>
+            <li><a href="index.html" class="text-2xl font-semibold">
+            Pratik/Portfolio</a></li>
+    </ul></div>
         <div class="right">
             <ul>
                 <li><a href="/">Home</a></li>       
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a href="project.html">Projects-Info</a></li>
+                <li><a href="projectinfo.html">Projects-Info</a></li>
             </ul>
         </div>
     </nav>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects-Info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Ubuntu&display=swap" rel="stylesheet">
+<!-- Include Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    *{
+         margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(0, 0, 33);
+        color: white;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 24px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(81, 81, 201);
+        font-size: 1.02rem;
+    }
+   
+    .left{
+        font-size: 1.7rem;
+    }
+    .left ul li{
+        list-style: none;
+    }
+    .left ul li a:hover{
+        color: rgb(81, 81, 201);
+        font-size: 1.7rem;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <ul>
+                <li><a href="index.html" class="text-2xl font-semibold">
+                Pratik/Portfolio</a></li>
+        </ul></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>       
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="projectinfo.html">Projects-Info</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+<main class="container mx-auto py-8 px-6">
+<section>
+<h2 class="text-3xl font-semibold mb-4">Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-semibold mb-2">Note Sharing System (PHP,MYSQL)</h3>
+<p class="mb-4">Description:The Note Sharing System is a web application that allows users to create, share, and manage notes. It provides a user-friendly interface for creating different types of notes, such as text notes, image notes, and audio notes. Users can also organize their notes into folders and share them with other users. The system offers features like search, sorting, and tagging to help users find their notes quickly and efficiently.</p>
+<p class="mb-4">Technologies used: PHP,MYSQL, HTML, CSS, JavaScript</p>
+<a style="border: 2px groove black; background-color:rgb(81, 81, 201) ;color: white;" href="notes_sharing.pdf">Download PDF</a>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Text To HTML Convert(Django)</h3>
+<p class="mb-4">Description:Online text-to-HTML editors are web-based tools that help users convert plain text into HTML code without the need for manual coding. These editors are useful for individuals who may not be familiar with HTML or prefer a more user-friendly way to create HTML content.</p>
+<p class="mb-4">Technologies used: HTML, CSS,Django</p>
+<a style="border: 2px groove black; background-color:rgb(81, 81, 201);color: white;" href="text_to_html.pdf">Download PDF</a>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Data Visualization (Java)</h3>
+<p class="mb-4">Description: The Data Visualization project is a Java application that focuses on visualizing complex datasets. It utilizes various charting libraries and algorithms to generate insightful visual representations of data. The application supports interactive exploration, filtering, and customization of visualizations for enhanced data analysis.</p>
+<p class="mb-4">Technologies used: Java, JavaFX, Data visualization libraries</p>
+<a style="border: 2px groove black; background-color: rgb(81, 81, 201) ;color: white;" href="project3.pdf">Download PDF</a>
+</div>
+</div>
+</section>
+</main>
+</body>
+
+</html>
+

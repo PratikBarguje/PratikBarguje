@@ -43,6 +43,13 @@
     .left{
         font-size: 1.7rem;
     }
+    .left ul li{
+        list-style: none;
+    }
+    .left ul li a:hover{
+        color: rgb(81, 81, 201);
+        font-size: 1.72rem;
+    }
     .firstsection{
         display: flex;
         justify-content: space-around;
@@ -125,13 +132,17 @@
 <body>
     <header>
     <nav>
-        <div class="left">Pratik/Portfolio</div>
+        <div class="left">
+            <ul>
+            <li><a href="index.html" class="text-2xl font-semibold">
+            Pratik/Portfolio</a></li>
+    </ul></div>
         <div class="right">
             <ul>
                 <li><a href="/">Home</a></li>       
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a href="project.html">Projects-Info</a></li>
+                <li><a href="projectinfo.html">Projects-Info</a></li>
             </ul>
         </div>
     </nav>
